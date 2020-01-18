@@ -72,7 +72,7 @@ spec:
         # Include this if you need to mount a customised known_hosts
         # file; you'll also need the volume declared above.
         # - name: ssh-config
-        #   mountPath: /root/.ssh
+        #   mountPath: /etc/fluxd/ssh
 
         # Include this and the volume "kubeconfig" above, and the
         # environment entry "KUBECONFIG" below, to override the config
@@ -100,7 +100,8 @@ spec:
         - --ssh-keygen-dir=/var/fluxd/keygen
 
         # replace or remove the following URL
-        - --git-url=git@github.com:weaveworks/flux-get-started
+        - --git-url=git@github.com:TheECanyon/gitops-tutorial
+        - --git-path=deploy/kubernetes
         - --git-branch=master
 
         # include these next two to connect to an "upstream" service
