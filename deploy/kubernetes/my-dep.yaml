@@ -3,20 +3,20 @@ kind: Deployment
 metadata:
   name: test-depl
   labels:
-   app: osgi-tut
+   app: aries-tut
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: osgi-tut
+      app: aries-tut
   template:
     metadata:
       labels:
-        app: osgi-tut
+        app: aries-tut
     spec:
       containers:
-      - name: osgi-tut-container
-        image: klibio/io.klib.docker.osgi.tutorial:develop-latest
+      - name: aries-tut-container
+        image: klibio/io.klib.aries.example:develop-latest
         imagePullPolicy: Always
         tty: true
         ports:
