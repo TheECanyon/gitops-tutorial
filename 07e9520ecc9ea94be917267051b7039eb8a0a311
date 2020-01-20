@@ -1,0 +1,1 @@
+{"jobID":"5fba07d4-b4de-eef9-431e-64e32372c66d","spec":{"type":"policy","cause":{"Message":"","User":"TheECanyon \u003cschindler89@aol.com\u003e"},"spec":{"default:deployment/aries-depl":{"add":{"automated":"true"},"remove":{}}}},"result":null}
