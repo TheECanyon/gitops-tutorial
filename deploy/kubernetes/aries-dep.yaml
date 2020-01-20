@@ -1,9 +1,12 @@
+---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: aries-depl
   labels:
     app: aries-depl
+  annotations:
+    fluxcd.io/automated: 'true'
 spec:
   replicas: 2
   selector:
@@ -16,7 +19,7 @@ spec:
     spec:
       containers:
       - name: aries-depl
-        image: klibio/io.klib.aries.example:develop-latest
+        image: klibio/io.klib.aries.example:develop_x86-64_0.1.0.20191204-202609_5500cd4
         imagePullPolicy: IfNotPresent
         tty: true
         ports:
