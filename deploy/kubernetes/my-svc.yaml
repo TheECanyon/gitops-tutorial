@@ -3,13 +3,13 @@ kind: Service
 metadata:
   name: test-svc
   labels:
-    app: osgi-tut
+    app: aries-depl
 spec:
   type: NodePort
   ports:
-    - port: 8888
+    - port: 8080
       protocol: TCP
       targetPort: 8080
       nodePort: 31111
   selector:
-    app: osgi-tut
+    app: aries-depl
