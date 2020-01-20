@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: aries-depl
   labels:
-   app: aries-depl
+    app: aries-depl
 spec:
   replicas: 1
   selector:
@@ -12,12 +12,12 @@ spec:
   template:
     metadata:
       labels:
-        app: aries-tut
+        app: aries-depl
     spec:
       containers:
-      - name: aries-tut-container
+      - name: aries-depl
         image: klibio/io.klib.aries.example:develop-latest
-        imagePullPolicy: Always
+        imagePullPolicy: IfNotPresent
         tty: true
         ports:
         - containerPort: 8080
