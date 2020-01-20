@@ -1,0 +1,1 @@
+{"jobID":"9607db8a-6604-146a-503f-6e48f9379ec7","spec":{"type":"policy","cause":{"Message":"","User":"TheECanyon \u003cschindler89@aol.com\u003e"},"spec":{"default:deployment/test-depl":{"add":{"automated":"true"},"remove":{}}}},"result":null}
