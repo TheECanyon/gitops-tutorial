@@ -1,9 +1,12 @@
+---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: aries-depl
   labels:
     app: aries-depl
+  annotations:
+    fluxcd.io/automated: 'true'
 spec:
   replicas: 1
   selector:
