@@ -20,5 +20,5 @@ spec:
         imagePullPolicy: Always
         tty: true
         ports:
-        - containerPort: 8080
+        - containerPort: "8080"
           protocol: TCP
