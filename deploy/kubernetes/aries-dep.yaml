@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: aries-depl
+  labels:
+   app: aries-depl
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: aries-depl
+  template:
+    metadata:
+      labels:
+        app: aries-tut
+    spec:
+      containers:
+      - name: aries-tut-container
+        image: klibio/io.klib.aries.example:develop-latest
+        imagePullPolicy: Always
+        tty: true
+        ports:
+        - containerPort: "8080"
+          protocol: TCP
