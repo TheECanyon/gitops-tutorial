@@ -103,6 +103,7 @@ spec:
         - --git-url=git@github.com:TheECanyon/gitops-tutorial.git
         - --git-path=deploy/kubernetes
         - --git-branch=master
+        - --git-poll-interval=30s
 
         # include these next two to connect to an "upstream" service
         # (e.g., Weave Cloud). The token is particular to the service.
